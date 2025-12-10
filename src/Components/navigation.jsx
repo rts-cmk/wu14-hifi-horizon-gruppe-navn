@@ -1,7 +1,7 @@
-import "../style/navigation.sass"
+import "../style/navigation.sass";
 
 function Navigation() {
-    return ( <div className="navigationDiv"></div> );
+  return <div className="navigationDiv"></div>;
 }
 
 export default Navigation;
