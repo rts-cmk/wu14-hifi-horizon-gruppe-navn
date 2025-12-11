@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 import "../Style/header.sass";
 import CartSvg from "./cartSvg";
 import ProfileSvg from "./profileSvg";
@@ -7,15 +7,27 @@ function Header() {
   return (
     <div className="headerDiv">
       <span className="headerSpan1">
-        <img src="./public/HIFILogo.png" alt="" />
-        <Link className="cap font-fam">Shop</Link>
-        <Link className="cap font-fam">About us</Link>
-        <Link className="cap font-fam">Contact us</Link>
+        <NavLink to="/">
+          <img src="./public/HIFILogo.png" alt="" />
+        </NavLink>
+        <NavLink to="/ProductPage" className="cap font-fam">
+          Shop
+        </NavLink>
+        <NavLink to="/AboutPage" className="cap font-fam">
+          About us
+        </NavLink>
+        <NavLink to="/ContactPage" className="cap font-fam">
+          Contact us
+        </NavLink>
       </span>
       <span className="headerSpan2">
         <input type="text" placeholder="Search product..." />
-        <button><img src="./profile.svg" alt="" /></button>
-        <button><img src="./cart.svg" alt="" /></button>
+        <button>
+          <img src="./profile.svg" alt="" />
+        </button>
+        <button>
+          <img src="./cart.svg" alt="" />
+        </button>
       </span>
     </div>
   );

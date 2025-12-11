@@ -1,10 +1,18 @@
-import "../Style/phoneMenu.sass"
+import "../Style/phoneMenu.sass";
+import { useState } from "react";
+import { Link } from "react-router";
 
 function PhoneMenu() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
   return (
     <div className="phoneMenuDiv">
       <button>
         <svg
+          className="svg"
           width="22"
           height="22"
           viewBox="0 0 22 22"
@@ -19,8 +27,9 @@ function PhoneMenu() {
       </button>
       <button>
         <svg
-          width="49"
-          height="56"
+          className="svg"
+          width="22"
+          height="22"
           viewBox="0 0 49 56"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -33,8 +42,9 @@ function PhoneMenu() {
       </button>
       <button>
         <svg
-          width="55"
-          height="49"
+          className="svg"
+          width="29.42"
+          height="26"
           viewBox="0 0 55 49"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -45,27 +55,37 @@ function PhoneMenu() {
           />
         </svg>
       </button>
-      <button>
+      <button className="burgerMenu" onClick={toggleMenu}>
         <svg
+          className="svg lucide lucide-menu-icon lucide-menu"
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
+          width="25"
           height="24"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-menu-icon lucide-menu"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         >
           <path d="M4 5h16" />
           <path d="M4 12h16" />
           <path d="M4 19h16" />
         </svg>
       </button>
-      ;
+      <div
+        id="burgerMenuDiv"
+        className="burgerMenuDiv"
+        style={{ display: menuOpen ? "flex" : "none" }}
+      >
+        <Link to="/" className="cap font-fam"><img src="./HIFILogo.png" alt="" /></Link>
+        <Link to="/ProductPage" className="cap font-fam">Shop</Link>
+        <Link to="/AboutPage" className="cap font-fam">About us</Link>
+        <Link to="/ContactPage"className="cap font-fam">Contact us</Link>
+      </div>
     </div>
   );
 }
 
 export default PhoneMenu;
+// ...existing code...

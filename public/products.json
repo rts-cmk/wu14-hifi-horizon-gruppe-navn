@@ -1,0 +1,348 @@
+[
+  {
+    "Title": "boesendorfer_vcs_wall",
+    "product_title": "Bösendorfer VCS Wall Højttaler",
+    "short_description": "Slank væghøjttaler i elegant design.",
+    "long_description": "En stilren væghøjttaler, der kombinerer flot håndværk med levende og velkontrolleret lyd.",
+    "img_url": "/DataBilleder/hojtalere/boesendorfer_vcs_wall.gif",
+    "colors": ["sort"],
+    "category": "Højttalere",
+    "price": 4500,
+    "stock_status": "in stock"
+  },
+  {
+    "Title": "epos_m5",
+    "product_title": "Epos M5 Monitorhøjttaler",
+    "short_description": "Kompakt og velspillende monitorhøjttaler.",
+    "long_description": "En balanceret bookshelf-model med klar top og præcis gengivelse, ideel til små rum.",
+    "img_url": "/DataBilleder/hojtalere/epos_m5.gif",
+    "colors": ["hvid", "sort"],
+    "category": "Højttalere",
+    "price": 3200,
+    "stock_status": "few left"
+  },
+  {
+    "Title": "harbeth_hl7es2",
+    "product_title": "Harbeth HL7ES2 Gulvhøjttaler",
+    "short_description": "Gulvhøjttaler med fyldig mellemtone.",
+    "long_description": "HL7ES2 præsenterer den velkendte Harbeth-naturgengivelse med varm, åben og detaljeret lyd.",
+    "img_url": "/DataBilleder/hojtalere/harbeth_hl7es2.jpg",
+    "colors": ["træ", "sort"],
+    "category": "Højttalere",
+    "price": 22000,
+    "stock_status": "in stock"
+  },
+  {
+    "Title": "harbeth_monitor30",
+    "product_title": "Harbeth Monitor 30 Højttaler",
+    "short_description": "Præcis studie- og monitorhøjttaler.",
+    "long_description": "Monitor 30 leverer neutral, kontrolleret lyd og bruges ofte i både studie- og hi-fi-miljøer.",
+    "img_url": "/DataBilleder/hojtalere/harbeth_monitor30.jpg",
+    "colors": ["sort"],
+    "category": "Højttalere",
+    "price": 17000,
+    "stock_status": "in stock"
+  },
+  {
+    "Title": "harbeth_p3es2",
+    "product_title": "Harbeth P3ES2 Bookshelf Højttaler",
+    "short_description": "Kompakt bookshelf-model med høj detaljegrad.",
+    "long_description": "P3ES2 overrasker med et stort og musikalsk lydbillede trods sin meget lille størrelse.",
+    "img_url": "/DataBilleder/hojtalere/harbeth_p3es2.jpg",
+    "colors": ["hvid"],
+    "category": "Højttalere",
+    "price": 9500,
+    "stock_status": "few left"
+  },
+  {
+    "Title": "Pro_ject_Debut_3_bl",
+    "product_title": "Pro-Ject Debut 3 Pladespiller Blå",
+    "short_description": "Pladespiller i flot blå finish.",
+    "long_description": "Debut 3 giver stabil afspilning og et moderne udtryk i den karakteristiske blå farve.",
+    "img_url": "/DataBilleder/pladespillere/Pro_ject_Debut_3_bl.jpg",
+    "colors": ["blå"],
+    "category": "Pladespillere",
+    "price": 2800,
+    "stock_status": "in stock"
+  },
+  {
+    "Title": "Pro_ject_Debut_III_red_1",
+    "product_title": "Pro-Ject Debut III Pladespiller Rød",
+    "short_description": "Pladespiller i iøjnefaldende rød farve.",
+    "long_description": "En brugervenlig starterpladespiller med indbygget riaa og et udtryksfuldt design.",
+    "img_url": "/DataBilleder/pladespillere/Pro_ject_Debut_III_red_1.jpg",
+    "colors": ["rød"],
+    "category": "Pladespillere",
+    "price": 2900,
+    "stock_status": "in stock"
+  },
+  {
+    "Title": "Pro_ject_Debut_III_yellow_1",
+    "product_title": "Pro-Ject Debut III Pladespiller Gul",
+    "short_description": "Gul pladespiller med frisk udstråling.",
+    "long_description": "Denne udgave af Debut III kombinerer stabil mekanik med en farverig fremtoning.",
+    "img_url": "/DataBilleder/pladespillere/Pro_ject_Debut_III_yellow_1.jpg",
+    "colors": ["gul"],
+    "category": "Pladespillere",
+    "price": 2900,
+    "stock_status": "few left"
+  },
+  {
+    "Title": "Pro_ject_rpm10",
+    "product_title": "Pro-Ject RPM10 High-End Pladespiller",
+    "short_description": "Direktedrevet pladespiller i high-end klassen.",
+    "long_description": "RPM10 leverer præcis rotationsstyring og resonansfri konstruktion for optimal lyd.",
+    "img_url": "/DataBilleder/pladespillere/Pro_ject_rpm10.jpg",
+    "colors": ["sort"],
+    "category": "Pladespillere",
+    "price": 18000,
+    "stock_status": "in stock"
+  },
+  {
+    "Title": "Pro_ject_rpm_5",
+    "product_title": "Pro-Ject RPM5 Pladespiller",
+    "short_description": "Pladespiller med glaspladetallerken.",
+    "long_description": "RPM 5 er kendt for stabil drift, elegant design og lydkvalitet, der overgår prisklassen.",
+    "img_url": "/DataBilleder/pladespillere/Pro_ject_rpm_5.jpg",
+    "colors": ["sort", "træ"],
+    "category": "Pladespillere",
+    "price": 7500,
+    "stock_status": "in stock"
+  },
+
+  {
+    "Title": "Creek_OBH_22_Passive_Preamp",
+    "product_title": "Creek OBH-22 Passiv Forforstærker",
+    "short_description": "Passiv forforstærker fra Creek.",
+    "long_description": "Simpel og robust forforstærker til ren analog styring.",
+    "img_url": "/DataBilleder/forforstaerkere/Creek_OBH_22_Passive_Preamp.jpg",
+    "colors": ["sølv"],
+    "category": "Forforstærkere",
+    "price": 2400,
+    "stock_status": "in stock"
+  },
+  {
+    "Title": "parasound_classic7100",
+    "product_title": "Parasound Classic 7100 Forforstærker",
+    "short_description": "Kompakt forforstærker fra Parasound.",
+    "long_description": "Kendt for klarhed og god byggekvalitet.",
+    "img_url": "/DataBilleder/forforstaerkere/parasound_classic7100.jpg",
+    "colors": ["sort"],
+    "category": "Forforstærkere",
+    "price": 5200,
+    "stock_status": "few left"
+  },
+  {
+    "Title": "parasound_halop3",
+    "product_title": "Parasound Halo P3 Forforstærker",
+    "short_description": "Forforstærker i Halo-serien.",
+    "long_description": "Avancerede kontrolmuligheder og neutral gengivelse.",
+    "img_url": "/DataBilleder/forforstaerkere/parasound_halop3.jpg",
+    "colors": ["sølv"],
+    "category": "Forforstærkere",
+    "price": 8500,
+    "stock_status": "in stock"
+  },
+  {
+    "Title": "Project_prebox",
+    "product_title": "Pro-Ject Pre Box Forforstærker",
+    "short_description": "Kompakt prebox fra Pro-Ject.",
+    "long_description": "Enkel phono-stage med flot pris/ydelse-forhold.",
+    "img_url": "/DataBilleder/forforstaerkere/Project_prebox.jpg",
+    "colors": ["sort"],
+    "category": "Forforstærkere",
+    "price": 1600,
+    "stock_status": "in stock"
+  },
+
+  {
+    "Title": "manley_mahi",
+    "product_title": "Manley Mahi Effektforstærker",
+    "short_description": "Effektforstærker fra Manley.",
+    "long_description": "Høj kvalitet og solid ydelse til krævende systemer.",
+    "img_url": "/DataBilleder/effektforstaerkere/manley_mahi.jpg",
+    "colors": ["sølv"],
+    "category": "Effektforstærkere",
+    "price": 19000,
+    "stock_status": "few left"
+  },
+  {
+    "Title": "manley_neoclassic300b",
+    "product_title": "Manley Neo-Classic 300B Effekttrin",
+    "short_description": "Rørbaseret high-end effekttrin.",
+    "long_description": "Neoclassic 300B tilbyder varm klang og masser af detaljer.",
+    "img_url": "/DataBilleder/effektforstaerkere/manley_neoclassic300b.jpg",
+    "colors": ["guld", "sort"],
+    "category": "Effektforstærkere",
+    "price": 33000,
+    "stock_status": "in stock"
+  },
+  {
+    "Title": "manley_snapper",
+    "product_title": "Manley Snapper Effektforstærker",
+    "short_description": "Kraftfuld effektforstærker.",
+    "long_description": "Robust design og fremragende kontrol ved høje niveauer.",
+    "img_url": "/DataBilleder/effektforstaerkere/manley_snapper.jpg",
+    "colors": ["sort"],
+    "category": "Effektforstærkere",
+    "price": 21000,
+    "stock_status": "in stock"
+  },
+  {
+    "Title": "parasound_haloa23",
+    "product_title": "Parasound Halo A23 Effektforstærker",
+    "short_description": "Stereo effektforstærker.",
+    "long_description": "Effektiv og driftssikker konstruktion til hjemmebrug.",
+    "img_url": "/DataBilleder/effektforstaerkere/parasound_haloa23.jpg",
+    "colors": ["sort"],
+    "category": "Effektforstærkere",
+    "price": 11000,
+    "stock_status": "few left"
+  },
+
+  {
+    "Title": "creek_classic_dvd",
+    "product_title": "Creek Classic DVD-afspiller",
+    "short_description": "DVD-afspiller fra Creek.",
+    "long_description": "Pålidelig afspiller med god mediehåndtering.",
+    "img_url": "/DataBilleder/dvdafspillere/creek_classic.jpg",
+    "colors": ["sort"],
+    "category": "DVD-afspillere",
+    "price": 1800,
+    "stock_status": "in stock"
+  },
+  {
+    "Title": "exposure_2010S",
+    "product_title": "Exposure 2010S DVD-afspiller",
+    "short_description": "DVD-afspiller i Exposure-serien.",
+    "long_description": "Kendt for robust byggekvalitet og stabil afspilning.",
+    "img_url": "/DataBilleder/dvdafspillere/exposure_2010S.jpg",
+    "colors": ["sølv"],
+    "category": "DVD-afspillere",
+    "price": 2200,
+    "stock_status": "few left"
+  },
+  {
+    "Title": "parasound_d200",
+    "product_title": "Parasound D200 DVD/Blu-ray Afspiller",
+    "short_description": "DVD/Blu-ray afspiller fra Parasound.",
+    "long_description": "God formatunderstøttelse og diskret design.",
+    "img_url": "/DataBilleder/dvdafspillere/parasound_d200.jpg",
+    "colors": ["sort"],
+    "category": "DVD-afspillere",
+    "price": 3600,
+    "stock_status": "in stock"
+  },
+  {
+    "Title": "parasound_halod3",
+    "product_title": "Parasound Halo D3 DVD-afspiller",
+    "short_description": "Kvalitets DVD-afspiller.",
+    "long_description": "Velbygget enhed med fokuseret medie-udgang.",
+    "img_url": "/DataBilleder/dvdafspillere/parasound_halod3.jpg",
+    "colors": ["sort"],
+    "category": "DVD-afspillere",
+    "price": 3100,
+    "stock_status": "in stock"
+  },
+
+  {
+    "Title": "creek_classic_cd",
+    "product_title": "Creek Classic CD-afspiller",
+    "short_description": "CD-afspiller fra Creek.",
+    "long_description": "Præcis CD-læsning og robust mekanik for lang levetid.",
+    "img_url": "/DataBilleder/cd_afspillere/creek_classic_cd.jpg",
+    "colors": ["sølv"],
+    "category": "CD-afspillere",
+    "price": 4800,
+    "stock_status": "in stock"
+  },
+  {
+    "Title": "creek_Destiny_CD",
+    "product_title": "Creek Destiny CD-afspiller",
+    "short_description": "High-end CD-afspiller.",
+    "long_description": "Destiny-serien leverer lav jitter og detaljeret lyd.",
+    "img_url": "/DataBilleder/cd_afspillere/creek_Destiny_CD.jpg",
+    "colors": ["sort"],
+    "category": "CD-afspillere",
+    "price": 9800,
+    "stock_status": "few left"
+  },
+  {
+    "Title": "creek_evo_cd",
+    "product_title": "Creek Evolution CD-afspiller",
+    "short_description": "CD-afspiller i Evo-serien.",
+    "long_description": "God værdi og høj præstation for CD-afspilning.",
+    "img_url": "/DataBilleder/cd_afspillere/creek_evo_cd.jpg",
+    "colors": ["sølv"],
+    "category": "CD-afspillere",
+    "price": 3900,
+    "stock_status": "in stock"
+  },
+  {
+    "Title": "Exp_2010S_CD",
+    "product_title": "Exposure 2010S CD-afspiller",
+    "short_description": "CD-udgave af Exposure 2010S.",
+    "long_description": "Solid mekanik og stærk lydpræstation.",
+    "img_url": "/DataBilleder/cd_afspillere/Exp_2010S_CD.gif",
+    "colors": ["hvid"],
+    "category": "CD-afspillere",
+    "price": 6200,
+    "stock_status": "in stock"
+  },
+
+  {
+    "Title": "jolida_JD102b",
+    "product_title": "Jolida JD102B Rørforstærker",
+    "short_description": "Rørforstærker fra Jolida.",
+    "long_description": "JD102B leverer varm rørklang med klassisk karakter.",
+    "img_url": "/DataBilleder/roer_forstaerkere/jolida_JD102b.jpg",
+    "colors": ["brun"],
+    "category": "Rørforstærkere",
+    "price": 6500,
+    "stock_status": "few left"
+  },
+  {
+    "Title": "jolida_JD202a",
+    "product_title": "Jolida JD202A Rørforstærker",
+    "short_description": "Kompakt rørforstærker.",
+    "long_description": "Godt balanceret rørlyd i et kompakt kabinet.",
+    "img_url": "/DataBilleder/roer_forstaerkere/jolida_JD202a.jpg",
+    "colors": ["sølv"],
+    "category": "Rørforstærkere",
+    "price": 7800,
+    "stock_status": "in stock"
+  },
+  {
+    "Title": "jolida_JD300b",
+    "product_title": "Jolida JD300B Rørforstærker",
+    "short_description": "Mellemklasse rørforstærker.",
+    "long_description": "Balanceret og fyldig klang til lytteren, der ønsker varme i lyden.",
+    "img_url": "/DataBilleder/roer_forstaerkere/jolida_JD300b.jpg",
+    "colors": ["sort"],
+    "category": "Rørforstærkere",
+    "price": 12000,
+    "stock_status": "in stock"
+  },
+  {
+    "Title": "jolida_JD302b",
+    "product_title": "Jolida JD302B Rørforstærker",
+    "short_description": "Rørforstærker med detaljeret gengivelse.",
+    "long_description": "JD302B kombinerer vintageklang med moderne komponenter.",
+    "img_url": "/DataBilleder/roer_forstaerkere/jolida_JD302b.jpg",
+    "colors": ["sort"],
+    "category": "Rørforstærkere",
+    "price": 14000,
+    "stock_status": "few left"
+  },
+  {
+    "Title": "jolida_JD502b",
+    "product_title": "Jolida JD502B Rørforstærker",
+    "short_description": "Topmodel rørforstærker.",
+    "long_description": "JD502B tilbyder høj effektydelse med varm og fyldig rørklang.",
+    "img_url": "/DataBilleder/roer_forstaerkere/jolida_JD502b.jpg",
+    "colors": ["sølv"],
+    "category": "Rørforstærkere",
+    "price": 17500,
+    "stock_status": "in stock"
+  }
+]
