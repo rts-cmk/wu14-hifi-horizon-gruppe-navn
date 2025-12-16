@@ -43,6 +43,20 @@ function Footer() {
         </span>
       </section>
       <hr />
+      <span className="footerSec2">
+        <span>
+          <img src="../public/Vector (1).png" alt="Vector 1" />
+          <img src="../public/Vector (2).png" alt="Vector 2" />
+          <img src="../public/Vector (3).png" alt="Vector 3" />
+        </span>
+        <span>
+          <p>
+            HiFi Horizon (Edinburgh) Ltd is registered in Scotland. No:
+            SC049298. Registered office: 2 Joppa Rd, Edinburgh EH15 2EU
+          </p>
+          <p>Designed by Me25 :)</p>
+        </span>
+      </span>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import Footer from "../Components/footer";
 import Header from "../Components/header";
 import PhoneMenu from "../Components/phoneMenu";
+import PopularProducts from "../Components/popularProducts";
 import "../Style/frontPage.sass";
 import { Link } from "react-router";
 
@@ -20,6 +21,9 @@ function FrontPage() {
           <button className="orangeButton">
             <Link to="/ProductPage">Se alle produkter</Link>
           </button>
+        </span>
+        <span className="PopularSpan">
+          <PopularProducts />
         </span>
       </section>
       <article className="article1">

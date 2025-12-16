@@ -1,20 +1,25 @@
 import { useEffect, useState } from "react";
 import "../Style/productFeact.sass";
-import { Link } from "react-router"
 
-function ProductFeact() {
+function PopularProducts() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetchProducts();
+    fetchPopular();
   }, []);
 
-  const fetchProducts = async () => {
+  const fetchPopular = async () => {
     try {
       const response = await fetch("/products.json");
       const data = await response.json();
-      setProducts(data);
+
+      // 🔥 Filtrer kun produkter med popular === true
+      const popularProducts = data.filter(
+        (product) => product.popular === true
+      );
+
+      setProducts(popularProducts);
     } catch (error) {
       console.error("Error fetching products:", error);
     } finally {
@@ -28,27 +33,17 @@ function ProductFeact() {
     <div className="productFeactContainer">
       {products.map((product) => (
         <div key={product.Title} className="product-card">
-          <p className="uppercase right font-fam">
-            {" "}
-            compare
-            <img className="compareImage" src="./public/sliders.png" alt="" />
-          </p>
           <img
             className="productImage"
             src={product.img_url}
             alt={product.Title + " Billed"}
           />
+
           <span>
             <h3 className="uppercase">{product.Title}</h3>
             <p>{product.short_description}</p>
             <p className="font-fam">£ {product.price}</p>
-            <span>
-              <button className="orangeButton">
-                <Link to={`/details/${product.Title}`}>Add to cart</Link>
-              </button>
-              <p className="stockLevel uppercase">{product.stock_status}</p>
-              <div className={product.stock_status_color}></div>
-            </span>
+            <button className="orangeButton">Add to cart</button>
           </span>
         </div>
       ))}
@@ -56,4 +51,4 @@ function ProductFeact() {
   );
 }
 
-export default ProductFeact;
+export default PopularProducts;
