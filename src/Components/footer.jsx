@@ -45,9 +45,9 @@ function Footer() {
       <hr />
       <span className="footerSec2">
         <span>
-          <img src="../public/Vector (1).png" alt="Vector 1" />
-          <img src="../public/Vector (2).png" alt="Vector 2" />
-          <img src="../public/Vector (3).png" alt="Vector 3" />
+          <img src="../Vector (1).png" alt="Vector 1" />
+          <img src="../Vector (2).png" alt="Vector 2" />
+          <img src="../Vector (3).png" alt="Vector 3" />
         </span>
         <span>
           <p>

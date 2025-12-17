@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "../Style/productFeact.sass";
-import { Link } from "react-router"
+import { Link } from "react-router";
 
 function ProductFeact() {
   const [products, setProducts] = useState([]);
@@ -43,11 +43,11 @@ function ProductFeact() {
             <p>{product.short_description}</p>
             <p className="font-fam">£ {product.price}</p>
             <span>
-              <button className="orangeButton">
-                <Link to={`/details/${product.Title}`}>Add to cart</Link>
-              </button>
-              <p className="stockLevel uppercase">{product.stock_status}</p>
-              <div className={product.stock_status_color}></div>
+              <Link style={{maxWidth: "128px"}} className="orangeButton" to={`/details/${product.Title}`}>
+                Add to cart
+              </Link>
+              <p className="stockLevel uppercase flex align-center" style={{gap: "5px"}}>{product.stock_status}<div className={product.stock_status_color}></div></p>
+              
             </span>
           </span>
         </div>

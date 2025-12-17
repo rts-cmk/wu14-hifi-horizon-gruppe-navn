@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "../Style/productFeact.sass";
+import { Link } from "react-router";
 
 function PopularProducts() {
   const [products, setProducts] = useState([]);
@@ -43,7 +44,9 @@ function PopularProducts() {
             <h3 className="uppercase">{product.Title}</h3>
             <p>{product.short_description}</p>
             <p className="font-fam">£ {product.price}</p>
-            <button className="orangeButton">Add to cart</button>
+            <Link to={`/Details/${product.Title}`}>
+              <button className="orangeButton">Add to cart</button>
+            </Link>
           </span>
         </div>
       ))}

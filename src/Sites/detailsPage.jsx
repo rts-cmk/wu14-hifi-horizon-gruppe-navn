@@ -1,5 +1,6 @@
 import { useParams } from "react-router";
 import { useEffect, useState } from "react";
+import { Link } from "react-router";
 import Footer from "../Components/footer";
 import Header from "../Components/header";
 import PhoneMenu from "../Components/phoneMenu";
@@ -9,6 +10,7 @@ function DetailsPage() {
   const { title } = useParams();
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
     fetchProduct();
@@ -28,21 +30,76 @@ function DetailsPage() {
   };
 
   if (loading) return <div>Loading...</div>;
-  if (!product) return <div>Product not found</div>;
+  if (!product)
+    return (
+      <div>
+        Product not found{" "}
+        <Link className="orangeButton" to="/ProductPage">
+          Go back
+        </Link>
+      </div>
+    );
 
   return (
     <div>
       <Header />
       <PhoneMenu />
-      <h1 className="font-fam cap">Product</h1>
+      <Link to="/ProductPage">
+        <h1 className="font-fam cap">Product</h1>
+      </Link>
       <div className="productWrapper">
-        <img src={product.img_url} alt={product.title} />
+        <img
+          className="productImage"
+          src={product.img_url}
+          alt={product.title}
+        />
         <span className="productTextSpan">
           <h2>{product.product_title}</h2>
           <p>{product.short_description}</p>
           <br />
           <p>{product.long_description}</p>
-          <p>Pris: £{product.price}</p>
+          <div style={{ display: "flex", gap: "8px" }}>
+            {product.colors.map((color, index) => (
+              <div>
+                <span
+                  key={index}
+                  title={color}
+                  style={{
+                    width: "20px",
+                    padding: "10px",
+                    height: "20px",
+                    borderRadius: "50%",
+                    backgroundColor: color,
+                    border: "1px solid #ccc",
+                    display: "flex",
+                    flexDirection: "column",
+                  }}
+                ></span>
+                <p>{color}</p>
+              </div>
+            ))}
+          </div>
+
+          <span className="between align-center">
+            <p className="detail_price">Pris: £{product.price}</p>
+            <p className="flex" style={{ gap: "5px" }}>
+              {product.stock_status}
+              <div className={`${product.stock_status_color}`}></div>
+            </p>
+          </span>
+          <div className="quantity">
+            <div>
+              <button className="upCount" onClick={() => setQuantity((q) => Math.max(1, q - 1))}>
+                −
+              </button>
+
+              <span>{quantity}</span>
+
+              <button className="upCount" onClick={() => setQuantity((q) => q + 1)}>+</button>
+            </div>
+            <button className="orangeButton"> Add to cart</button>
+
+          </div>
         </span>
       </div>
       <Footer />
