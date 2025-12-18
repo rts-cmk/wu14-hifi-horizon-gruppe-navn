@@ -8,7 +8,7 @@ function Header() {
     <div className="headerDiv">
       <span className="headerSpan1">
         <NavLink to="/">
-          <img src="./public/HIFILogo.png" alt="" />
+          <img src="/HIFILogo.png" alt="" />
         </NavLink>
         <NavLink to="/ProductPage" className="cap font-fam">
           Shop
@@ -23,10 +23,10 @@ function Header() {
       <span className="headerSpan2">
         <input type="text" placeholder="Search product..." />
         <button>
-          <img src="./profile.svg" alt="" />
+          <img src="/profile.svg" alt="" />
         </button>
         <button>
-          <img src="./cart.svg" alt="" />
+          <img src="/cart.svg" alt="" />
         </button>
       </span>
     </div>

@@ -78,7 +78,7 @@ function PhoneMenu() {
         className="burgerMenuDiv"
         style={{ display: menuOpen ? "flex" : "none" }}
       >
-        <Link to="/" className="cap font-fam"><img src="./HIFILogo.png" alt="" /></Link>
+        <Link to="/" className="cap font-fam"><img src="/HIFILogo.png" alt="" /></Link>
         <Link to="/ProductPage" className="cap font-fam">Shop</Link>
         <Link to="/AboutPage" className="cap font-fam">About us</Link>
         <Link to="/ContactPage"className="cap font-fam">Contact us</Link>

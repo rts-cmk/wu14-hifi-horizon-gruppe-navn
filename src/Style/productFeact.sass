@@ -7,26 +7,35 @@
     .product-card
         flex-shrink: 0
         width: 260px
-        height: 397px
-        padding: 16px
+        min-height: 397px
+        max-height: 397px
+        padding: 8px
 
         display: flex
         flex-direction: column
-        justify-content: space-between
-
         box-shadow: 2px 4px 4px 0 rgba(0, 0, 0, 0.25)
         border-radius: 8px
         background-color: #fff
         img
-            width: 100%
             aspect-ratio: 1 / 1; /* kvadrat */
             width: 100%
-            height: 100%
+            height: auto
             object-fit: contain
+            max-height: 200px
+            min-height: 200px
+        h3
+            font-family: 'Museo Sans Rounded 300'
+            overflow: hidden
+            text-overflow: ellipsis
+            white-space: nowrap
+        p
+            font-family: 'Museo Sans Rounded 300'
         span
             text-align: center
             display: flex
             flex-direction: column
+            align-items: center
+            gap: 10px
             span
                 display: flex
                 flex-direction: row
@@ -39,6 +48,7 @@
             justify-content: flex-end
             gap: 6px
             font-size: 12px
+            height: 35px
 
         .compareImage
             width: 24px
@@ -48,12 +58,3 @@
         button
             align-self: center
             display: flex
-            align-items: center
-            justify-content: center
-
-            width: 128px
-            height: 35px
-            margin-top: auto
-
-            cursor: pointer
-            border-radius: 4px

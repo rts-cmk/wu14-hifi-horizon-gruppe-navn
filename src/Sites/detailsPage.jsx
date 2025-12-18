@@ -44,8 +44,8 @@ function DetailsPage() {
     <div>
       <Header />
       <PhoneMenu />
-      <Link to="/ProductPage">
-        <h1 className="font-fam cap">Product</h1>
+      <Link className="ProductBackLink" to="/ProductPage">
+        <h1 className="font-fam cap ProductH1">Product</h1>
       </Link>
       <div className="productWrapper">
         <img
@@ -54,26 +54,22 @@ function DetailsPage() {
           alt={product.title}
         />
         <span className="productTextSpan">
-          <h2>{product.product_title}</h2>
-          <p>{product.short_description}</p>
+          <h2 className="productH2">{product.product_title}</h2>
+          <p className="productShortDescription productDescrition">
+            {product.short_description}
+          </p>
           <br />
-          <p>{product.long_description}</p>
+          <p className="productLongDescription productDescrition">
+            {product.long_description}
+          </p>
           <div style={{ display: "flex", gap: "8px" }}>
             {product.colors.map((color, index) => (
-              <div>
+              <div className="productColorDiv">
                 <span
                   key={index}
                   title={color}
-                  style={{
-                    width: "20px",
-                    padding: "10px",
-                    height: "20px",
-                    borderRadius: "50%",
-                    backgroundColor: color,
-                    border: "1px solid #ccc",
-                    display: "flex",
-                    flexDirection: "column",
-                  }}
+                  className="productColorSpan"
+                  style={{ backgroundColor: color }}
                 ></span>
                 <p>{color}</p>
               </div>
@@ -88,20 +84,28 @@ function DetailsPage() {
             </p>
           </span>
           <div className="quantity">
-            <div>
-              <button className="upCount" onClick={() => setQuantity((q) => Math.max(1, q - 1))}>
+            <div className="productCount">
+              <button
+                className="upCount"
+                onClick={() => setQuantity((q) => Math.max(1, q - 1))}
+              >
                 −
               </button>
 
               <span>{quantity}</span>
 
-              <button className="upCount" onClick={() => setQuantity((q) => q + 1)}>+</button>
+              <button
+                className="upCount"
+                onClick={() => setQuantity((q) => q + 1)}
+              >
+                +
+              </button>
             </div>
-            <button className="orangeButton"> Add to cart</button>
-
+            <button className="productKnap"> Add to cart</button>
           </div>
         </span>
       </div>
+      <hr/>
       <Footer />
     </div>
   );
