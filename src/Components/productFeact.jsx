@@ -44,7 +44,7 @@ function ProductFeact() {
             <h3 className="uppercase">{product.Title}</h3>
             <p>{product.short_description}</p>
             <p className="font-fam">£ {product.price}</p>
-            <span>
+            <div>
               <Link
                 style={{ maxWidth: "128px" }}
                 className="orangeButton"
@@ -52,14 +52,14 @@ function ProductFeact() {
               >
                 Add to cart
               </Link>
-              <p
+              <div
                 className="stockLevel uppercase flex align-center"
                 style={{ gap: "5px" }}
               >
                 {product.stock_status}
                 <div className={product.stock_status_color}></div>
-              </p>
-            </span>
+              </div>
+            </div>
           </span>
         </div>
       ))}

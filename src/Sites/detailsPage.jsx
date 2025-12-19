@@ -18,7 +18,7 @@ function DetailsPage() {
 
   const fetchProduct = async () => {
     try {
-      const response = await fetch("/products.json");
+      const response = await fetch("https://lukuv.github.io/hifi-data/products.json");
       const data = await response.json();
       const foundProduct = data.find((p) => p.Title === title);
       setProduct(foundProduct);
