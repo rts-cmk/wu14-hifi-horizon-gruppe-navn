@@ -5,12 +5,17 @@ import { Link } from "react-router";
 function PhoneMenu() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
+  const toggleBurgerMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+  const [searchMenuOpen, setSearchMenuOpen] = useState(false);
+
+  const toggleSearchMenu = () => {
+    setSearchMenuOpen(!searchMenuOpen);
   };
   return (
     <div className="phoneMenuDiv">
-      <button>
+      <button className="searchMenu" onClick={toggleSearchMenu}>
         <svg
           className="svg"
           width="22"
@@ -25,6 +30,13 @@ function PhoneMenu() {
           />
         </svg>
       </button>
+      <div
+        id="searchMenuDiv"
+        className="searchMenuDiv"
+        style={{ display: searchMenuOpen ? "flex" : "none" }}
+      >
+        <input placeholder="Search product..." className="searchMenuInput" type="text" />
+      </div>
       <button>
         <svg
           className="svg"
@@ -55,7 +67,7 @@ function PhoneMenu() {
           />
         </svg>
       </button>
-      <button className="burgerMenu" onClick={toggleMenu}>
+      <button className="burgerMenu" onClick={toggleBurgerMenu}>
         <svg
           className="svg lucide lucide-menu-icon lucide-menu"
           xmlns="http://www.w3.org/2000/svg"
@@ -78,10 +90,18 @@ function PhoneMenu() {
         className="burgerMenuDiv"
         style={{ display: menuOpen ? "flex" : "none" }}
       >
-        <Link to="/" className="cap font-fam"><img src="/HIFILogo.png" alt="" /></Link>
-        <Link to="/ProductPage" className="cap font-fam">Shop</Link>
-        <Link to="/AboutPage" className="cap font-fam">About us</Link>
-        <Link to="/ContactPage"className="cap font-fam">Contact us</Link>
+        <Link to="/" className="cap font-fam">
+          <img src="/HIFILogo.png" alt="" />
+        </Link>
+        <Link to="/ProductPage" className="cap font-fam">
+          Shop
+        </Link>
+        <Link to="/AboutPage" className="cap font-fam">
+          About us
+        </Link>
+        <Link to="/ContactPage" className="cap font-fam">
+          Contact us
+        </Link>
       </div>
     </div>
   );
