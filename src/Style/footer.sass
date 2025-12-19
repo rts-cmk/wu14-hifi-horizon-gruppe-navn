@@ -1,0 +1,70 @@
+a
+    color: white
+    text-decoration: none
+
+.footerDiv
+    background: black
+    color: white
+    .footerSec1
+        padding: 48px 63px
+        display: flex
+        justify-content: space-between
+        .footerSpan1
+            display: flex
+            flex-direction: column
+            gap: 37px
+            font-size: 18px
+            font-family: 'Museo Sans Rounded 300'
+            font-weight: 400
+        .footerSpan2
+            display: flex
+            flex-direction: column
+            gap: 37px
+            font-size: 18px
+            font-family: 'Museo Sans Rounded 300'
+            font-weight: 400
+        .footerSpan3
+            display: flex
+            flex-direction: column
+            gap: 10px
+            font-size: 18px
+            font-weight: 400
+            address
+                font-family: 'Museo Sans Rounded 300'
+                font-size: 14
+            span
+                gap: 19px
+                display: flex
+
+@media screen and (max-width: 714px)
+    body
+        margin-bottom: 99px
+        .footerDiv
+
+            .footerSec1
+                gap: 15px
+                flex-direction: column
+                .footerSpan1
+                    flex-direction: column
+                    justify-content: flex-start
+                    gap: 2px
+                .footerSpan2
+                    flex-direction: column
+                    justify-content: space-between
+                    width: 100%
+                    gap: 2px
+                    a
+                        width: 100%
+                .footerSpan3
+                    gap: 2px
+                    flex-direction: column
+.footerSec2
+    padding: 12px 63px 
+    display: flex
+    flex-direction: column
+    span
+        display: flex
+        &:nth-child(1)
+            gap: 12px
+        &:nth-child(2)
+            gap: 154px
