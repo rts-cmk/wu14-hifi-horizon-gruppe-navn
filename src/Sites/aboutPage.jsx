@@ -1,7 +1,7 @@
 import Footer from "../Components/footer";
 import Header from "../Components/header";
 import PhoneMenu from "../Components/phoneMenu";
-import "../Style/AboutPage.sass";
+import "../Style/aboutPage.sass";
 
 function AboutPage() {
   return (
