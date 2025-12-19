@@ -12,7 +12,9 @@ function ProductFeact() {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch("/products.json");
+      const response = await fetch(
+        "https://lukuv.github.io/hifi-data/products.json"
+      );
       const data = await response.json();
       setProducts(data);
     } catch (error) {
@@ -43,11 +45,20 @@ function ProductFeact() {
             <p>{product.short_description}</p>
             <p className="font-fam">£ {product.price}</p>
             <span>
-              <Link style={{maxWidth: "128px"}} className="orangeButton" to={`/details/${product.Title}`}>
+              <Link
+                style={{ maxWidth: "128px" }}
+                className="orangeButton"
+                to={`/details/${product.Title}`}
+              >
                 Add to cart
               </Link>
-              <p className="stockLevel uppercase flex align-center" style={{gap: "5px"}}>{product.stock_status}<div className={product.stock_status_color}></div></p>
-              
+              <p
+                className="stockLevel uppercase flex align-center"
+                style={{ gap: "5px" }}
+              >
+                {product.stock_status}
+                <div className={product.stock_status_color}></div>
+              </p>
             </span>
           </span>
         </div>
