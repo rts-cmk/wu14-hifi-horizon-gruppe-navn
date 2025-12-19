@@ -1,7 +1,5 @@
 import { Link, NavLink } from "react-router";
 import "../Style/header.sass";
-import CartSvg from "./cartSvg";
-import ProfileSvg from "./profileSvg";
 
 function Header() {
   return (
