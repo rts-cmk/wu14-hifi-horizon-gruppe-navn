@@ -4,7 +4,7 @@ import { Link } from "react-router";
 import Footer from "../Components/footer";
 import Header from "../Components/header";
 import PhoneMenu from "../Components/phoneMenu";
-import "../style/details.sass";
+import "../Style/details.sass";
 
 function DetailsPage() {
   const { title } = useParams();
