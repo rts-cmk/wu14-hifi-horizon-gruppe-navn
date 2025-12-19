@@ -40,7 +40,7 @@ function ProductPage() {
             >
               Brand
               <img
-                src="./public/chevron-down.svg"
+                src="../public/chevron-down.svg"
                 alt=" Chevron Svg"
                 title="Easter Egg #1"
               />
@@ -88,7 +88,7 @@ function ProductPage() {
               style={{ cursor: "pointer" }}
             >
               Color
-              <img src="./public/chevron-down.svg" alt="Chevron Svg" />
+              <img src="../public/chevron-down.svg" alt="Chevron Svg" />
             </div>
             <div
               className={`foldOutText ${
@@ -133,7 +133,7 @@ function ProductPage() {
               style={{ cursor: "pointer" }}
             >
               Price
-              <img src="./public/chevron-down.svg" alt="Chevron svg" />
+              <img src="../public/chevron-down.svg" alt="Chevron svg" />
             </div>
             <div
               className={`foldOutText ${
