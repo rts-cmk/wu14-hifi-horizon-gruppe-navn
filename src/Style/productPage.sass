@@ -1,0 +1,83 @@
+.productPageDiv
+
+    h1
+        padding: 41px 0 0 34px
+    .indeholdProductPage
+        display: flex
+        flex-direction: row
+        .productImage
+            object-fit: cover
+            width: 230px
+            height: 200px
+.foldOutWrapper
+    font-family: 'Museo Sans Rounded 300'
+    padding: 20px
+    display: flex
+    flex-direction: column
+    width: 300px
+    gap: 10px
+    .foldOutDiv
+        width: 300px
+    .foldOutText
+        gap: 5px
+        display: flex
+        flex-direction: column
+        padding: 0px 10px
+        max-height: 0
+        overflow: hidden
+        background: #E8E8E8
+        transition: max-height 0.2s ease, padding 0.2s ease
+        label
+            display: flex
+            justify-content: space-between
+.foldOutHeader
+    background: #E8E8E8
+    display: flex
+    justify-content: space-between
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25)
+    padding: 5px
+.foldOutText.open
+    max-height: 800px // eller hvad der passer
+    padding: 10px 10px
+
+@media screen and (max-width: 714px)
+    .productPageDiv
+
+        h1
+            padding: 41px 0 0 34px
+        .indeholdProductPage
+            display: flex
+            flex-direction: column
+            .productImage
+                object-fit: cover
+                width: 230px
+                height: 200px
+    .foldOutWrapper
+        font-family: 'Museo Sans Rounded 300'
+        padding: 20px
+        display: flex
+        flex-direction: column
+        gap: 10px
+        .foldOutDiv
+            width: 100%
+        .foldOutText
+            gap: 5px
+            display: flex
+            flex-direction: column
+            padding: 0px 10px
+            max-height: 0
+            overflow: hidden
+            background: #E8E8E8
+            transition: max-height 0.2s ease, padding 0.2s ease
+            label
+                display: flex
+                justify-content: space-between
+        .foldOutHeader
+            background: #E8E8E8
+            display: flex
+            justify-content: space-between
+            box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25)
+            padding: 5px
+.foldOutText.open
+    max-height: 800px // eller hvad der passer
+    padding: 10px 10px

@@ -1,0 +1,45 @@
+.headerDiv
+    background: black
+    height: 99px
+    display: flex
+    justify-content: space-between
+    .headerSpan1
+        display: flex
+        align-items: center
+        justify-content: space-around
+        padding: 21px 31px
+        gap: 32px
+        a
+            &:hover
+                scale: 1.05
+
+        .active
+            color: gray
+            scale: 1.05
+            cursor: url('musTest1.png') 0.05 0.05, auto
+        img
+            width: 56px
+            height: 57px
+            object-fit: cover
+    .headerSpan2
+        display: flex
+        padding: 30px
+        gap: 26px
+        align-items: center
+        input
+            padding: 12px 0 10px 11px
+            width: 201px
+        button
+            border: none
+            background: none
+            display: flex
+            justify-content: center
+            align-content: center
+            gap: 6px
+            img
+                width: 23px
+                height: 26px
+
+@media screen and (max-width: 714px)
+    .headerDiv
+        display: none

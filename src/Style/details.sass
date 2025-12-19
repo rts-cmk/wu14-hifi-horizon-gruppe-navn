@@ -1,0 +1,71 @@
+hr
+    display: flex
+    max-width: 90%
+    margin: auto
+.productWrapper
+    display: flex
+    padding: 20px
+    gap: 20px
+.ProductH1
+    padding: 36px 0 10px 35px
+    max-width: 100%
+    display: flex
+.productImage
+    width: 75%
+.detail_price
+    font-size: 24px
+    font-family: "Museo Sans Rounded 500"
+.quantity
+    display: flex
+    gap: 10px
+    height: 45px
+    justify-content: space-between
+.productCount
+    display: flex
+    align-items: center
+    gap: 5px
+    font-family: "Museo Sans Rounded 500"
+    .upCount
+        background: transparent
+        color: black
+        font-size: 24px
+        cursor: pointer
+.productKnap
+    background: #FF6900
+    width: 85%
+.productH2
+    font-size: 24px
+    font-family: "Museo Sans Rounded 300"
+.productDescrition
+    font-size: 14px
+    font-family: "Museo Sans Rounded 300"
+.productColorDiv
+    display: flex
+    padding-top: 10px
+    align-items: center
+    flex-direction: column
+    .productColorSpan
+        width: 20px
+        display: flex
+        padding: 10px
+        height: 20px
+        border-radius: 50%
+        border: 1px solid #ccc
+        display: flex
+        flex-direction: column
+
+.productWrapper
+    animation: fadeIn 0.4s ease
+
+@keyframes fadeIn
+    from
+        opacity: 0
+        transform: translateY(10px)
+    to
+        opacity: 1
+        transform: translateY(0)
+
+@media screen and (max-width: 714px)
+    .productWrapper
+        flex-direction: column
+        gap: 1rem
